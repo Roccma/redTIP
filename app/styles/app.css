@@ -1,0 +1,49 @@
+body{
+	background: url('/img/hexellence.png');
+}
+
+@keyframes brillo {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#brillo {
+	background: rgba(250,250,250,.6);
+	position: 	fixed;
+	top:		0;
+	bottom:		0;
+	left: 		0;
+	right: 		0;
+	z-index: 	0;
+	animation: brillo 5s infinite;
+}
+.container {
+	position: relative;
+	z-index: 100;
+}
+
+.tituloBienvenida{
+	margin-top: 30px;
+}
+
+.inputBienvenida{
+	padding: 15px 10px;
+	font-size: 17px;
+}
+
+.btnBienvenida{
+	padding: 7px 10px;
+	font-size: 17px;
+	box-sizing: border-box;
+}
+
+.btnIngresarBienvenida{
+	margin-bottom: 10px;
+}

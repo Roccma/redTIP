@@ -1,0 +1,63 @@
+<div id="brillo"></div>
+<img src = "img/cabecera.png" style = "z-index: 100; position: relative; width: 100%"/>
+<div class="container">
+
+	<div class="row tituloBienvenida">
+		<div class="col-md-12">
+			<center><h1 style="font-weight: bold; font-size: 38px">¡Bienvenido a RED TIP!</h1></center>		
+		</div>
+	</div>
+	<br><br>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="container">
+				<!--<form style="width: 100%;">-->
+					<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4 form-group">
+							<label for="nickname" style = "font-size: 17px; text-align: left; display: block;" class="control-label"><span class = "glyphicon glyphicon-user"></span>&nbsp;&nbsp;Usuario</label>
+							{{input type="text" class="form-control inputBienvenida" id="nickname" value=nickname}}
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4 form-group">
+							<label for="password" style = "font-size: 17px; text-align: left; display: block;" class="control-label"><span class="glyphicon glyphicon-lock"></span>&nbsp;&nbsp;Contraseña</label>
+							{{input type="password" class="form-control inputBienvenida" id="password" value=password}}
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+					<br><br>
+					<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4">
+							<button class="btn btn-primary btnBienvenida btnIngresarBienvenida" style="width: 100%" {{action 'login'}}><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Ingresar</button>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+					<div style="text-align: center;" class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4">
+							<button class="btn btn-success btnBienvenida" style="width: 100%"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Registrarse</button>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+					<br>
+					<div class = "row rowAlert"  style = "display: none">
+						<div class = "col-md-4"></div>
+						<div class = "col-md-4">
+							<div class = "alert alert-danger" id = "alertLogin" style = "text-align: center; font-size: 17px">
+								<strong>ERROR:</strong> Credenciales incorrectas
+							</div>
+						</div>
+						<div class = "col-md-4"></div>
+					</div>
+				<!--</form>-->
+			</div>
+		</div>
+	</div>	
+</div>
+
+{{outlet}}
