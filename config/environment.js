@@ -6,6 +6,9 @@ module.exports = function(environment) {
     modulePrefix: 'red-tip',
     environment,
     rootURL: '/',
+    contentSecurityPolicy: {
+      'connect-src': "*"
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -24,6 +27,8 @@ module.exports = function(environment) {
     }
   };
 
+
+  //ENV.ACTIVE_MODEL_API_URL = 'http://localhost:3000/canales';
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -34,6 +39,8 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
+
+
     ENV.locationType = 'none';
 
     // keep test console output quieter

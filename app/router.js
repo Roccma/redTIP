@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('main', {path: '/'});	//Me deja el directorio root
+  this.route('chat');
 });
 
 export default Router;
